@@ -10,15 +10,23 @@
 <body>
     <div id="top">
         <button id="high-score">High Scores</button>
-        <div id="timer">100 Seconds Left</div>
+        <button id="go-back" class="hide">Back</button>
+        <div id="timer">Seconds Left: 100</div>
     </div>
     <div id="outline">
+        
         <div id="quiz-container">
+
+            
             <button id="retake-quiz" class="hide">Retake Quiz</button>
+            
             <div id="high-score-box" class="hide">High Scores</div>
+            
+            <h2>Score: <span id="score-time">0</span></h2>
+
+
             <div id="questions-container"  class="hide">
                 <div id="questions">Questions</div>
-                
                 <div id="answer-buttons" class="button-grid">
                     <button id="one" class="answers">Answer One</button>
                     <button id="two" class="answers">Answer Two</button>
@@ -26,9 +34,9 @@
                     <button id="four" class="answers">Answer Four</button>
                 </div>
             </div>    
+
             <div id="controls">
                 <button id="start-btn" class="start-btn btn">Start Quiz</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
         </div>
     </div>    

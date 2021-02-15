@@ -21,18 +21,27 @@ body{
 
 #timer{
     font-size: 30px;
+    border: black 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    width: 225px;
 }
 
-#high-score{
+#high-score, #go-back{
    height: 10%;
    font-size: 30px;
+   border-radius: 15px;
+   border: 2px black solid;
 }
 
 #high-score-box{
     font-size: 50px;
 }
 
-
+#retake-quiz{
+    font-size: 30px;
+}
 
 #outline{
     height: 90%;
@@ -47,7 +56,7 @@ body{
     margin: 10px;
 }
 
-#start-btn, #next-btn{
+#start-btn{
     font-size: 90px;
     margin: 10px;
 }
@@ -59,6 +68,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;;
 }
 
 #controls{
