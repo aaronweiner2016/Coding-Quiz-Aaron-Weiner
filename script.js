@@ -9,10 +9,9 @@ var retakeQuizBtn = document.querySelector("#retake-quiz");
 var goBackBtn = document.querySelector("#go-back");
 var secondsLeft = 100;
 var timerInterval;
+var backCorrect = document.querySelector("body");
 var scoreTime = document.querySelector("#score-time");
 var score = localStorage.getItem("score");
-var backCorrect = document.querySelector("body");
-
 
 
 
@@ -123,7 +122,8 @@ function viewHighScores() {
     qContainer.classList.add("hide");
     highScoresList.classList.remove("hide");
     goBackBtn.classList.remove("hide");
-    score = secondsLeft
+    score = secondsLeft;
+    localStorage.setItem("score", score);
 }
 
 
@@ -163,3 +163,4 @@ var questions = [
     ]
   }
 ]
+
