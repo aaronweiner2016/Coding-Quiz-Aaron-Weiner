@@ -19,11 +19,22 @@
             
             <button id="retake-quiz" class="hide">Retake Quiz</button>
             
-            <div id="high-score-box" class="hide">
-                <h3>High Scores</h3>
-            </div>
-            
             <h2>Score: <span id="score-time">0</span></h2>
+            
+            <div id="high-score-box" class="hide">
+              <div id="input-section">
+                    <form method="POST">
+                    <div class="input">
+                        <label for="name" style="font-size: 30px;">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name..."/>
+                    </div>
+                    <button id="submit-score">Submit Score</button>
+                </div>  
+                </form>
+                <h3>High Scores</h3>
+                <ul id="list-scores-name"></ul>
+            </div>
+                        
 
 
             <div id="questions-container"  class="hide">

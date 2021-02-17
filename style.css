@@ -7,6 +7,7 @@ body{
 }
 
 #top{
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,17 +27,18 @@ body{
     padding: 5px;
     background-color: white;
     width: 225px;
+    height: 40px;
 }
 
 #high-score, #go-back{
-   height: 10%;
+   height: 40px;
    font-size: 30px;
    border-radius: 15px;
    border: 2px black solid;
 }
 
 #high-score-box{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #retake-quiz{
@@ -44,7 +46,7 @@ body{
 }
 
 #outline{
-    height: 90%;
+    /* height: 90%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,4 +81,20 @@ body{
 
 .hide{
     display: none;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li p{
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul{
+    padding-inline-start: 0px;
 }
