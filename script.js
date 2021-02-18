@@ -215,10 +215,6 @@ function renderScores() {
   }
 }
 
-// function myFunction() {
-//   scoresArray.sort(function(a, b){return a-b});
-// }
-
 function storeScores() {
   localStorage.setItem("scoresArray", JSON.stringify(scoresArray));
 }
