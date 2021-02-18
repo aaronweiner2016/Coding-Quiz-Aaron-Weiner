@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+                <!--Top of page where a button to see highscores is at with a back button and the clock with the remaining seconds is located-->
     <div id="top">
         <button id="high-score">High Scores</button>
         <button id="go-back" class="hide">Back</button>
         <div id="timer">Seconds Left: 100</div>
     </div>
+                <!--Title for name of my quiz-->
+    <div id="title"><h1>JavaScript Coding Quiz</h1></div>
     <div id="outline">
-        
+                <!--Container for my quiz -->
         <div id="quiz-container">
             
+            <div id="game-over" class="hide">
+                <h1>Game Over</h1>
+                <h2>Thanks for playing!</h2>
+            </div>
+
             <button id="retake-quiz" class="hide">Retake Quiz</button>
             
-            <h2>Score: <span id="score-time">0</span></h2>
-            
+            <h2 id="score-zero" class="hide">Score: <span id="score-time">0</span></h2>
+                <!--Box where the high scores are located and the submit form to add your name and score to-->
             <div id="high-score-box" class="hide">
-              <div id="input-section">
+                <div id="input-section">
                     <form method="POST">
-                    <div class="input">
-                        <label for="name" style="font-size: 30px;">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name..."/>
-                    </div>
-                    <button id="submit-score">Submit Score</button>
+                        <div class="input">
+                            <label for="name" style="font-size: 30px;">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name..."/>
+                        </div>
+                        <button id="submit-score">Submit Name</button>
+                    </form>
                 </div>  
-                </form>
+                <!--Where the scores will be listed-->
                 <h3>High Scores</h3>
-                <ul id="list-scores-name"></ul>
+                <ol id="list-scores-name"></ol>
             </div>
                         
 
-
+                <!--Container that will show the questions and answers-->
             <div id="questions-container"  class="hide">
                 <div id="questions">Questions</div>
                 <div id="answer-buttons" class="button-grid">
@@ -46,12 +55,17 @@
                     <button id="four" class="answers">Answer Four</button>
                 </div>
             </div>    
-
+                <!--Controls and answers showing correct or not-->
             <div id="controls">
                 <button id="start-btn" class="start-btn btn">Start Quiz</button>
+                <button id="next" class="hide">Next</button></br>
+                <div id="wrong" class="hide">Incorrect Answer</div>
+                <div id="right" class="hide">Correct Answer</div>
             </div>
         </div>
-    </div>    
+    </div>
+
+    
         <script src="./script.js"></script>
 </body>
 </html>

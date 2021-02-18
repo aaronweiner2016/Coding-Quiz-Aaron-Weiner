@@ -7,11 +7,31 @@ body{
 }
 
 #top{
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
+}
+
+#title{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#title h1{
+    font-size: 80px;
+
+}
+
+#game-over h1,
+#game-over h2{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
 }
 
 #questions{
@@ -41,12 +61,16 @@ body{
     font-size: 30px;
 }
 
+#high-score-box h3{
+    display: flex;
+    justify-content: center;
+}
+
 #retake-quiz{
     font-size: 30px;
 }
 
 #outline{
-    /* height: 90%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,24 +101,40 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .hide{
     display: none;
 }
 
-li{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 li p{
     display: block;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
-ul{
-    padding-inline-start: 0px;
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    width: 100px;
+    margin-top: 10px;
+}
+
+#next{
+    font-size: 40px;
+}
+
+#wrong{
+    font-size: 20px;
+    color: red;
+}
+
+#right{
+    font-size: 20px;
+    color: green;
 }
