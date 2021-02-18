@@ -73,7 +73,6 @@ function goBack() {
 start.addEventListener("click", init);
 
 function startGame() {
-  // next.classList.remove("hide");
   start.classList.add("hide");
   shuffledQuestions = questions.sort(() => Math.random() - .5);
   currentQuestionIndex = 0;
@@ -81,7 +80,6 @@ function startGame() {
   setNextQuestion();
 }
 
-// Line 84 through 117 have to do with my questions and answers
 // Questions sections 
 
 
@@ -219,24 +217,15 @@ function storeScores() {
   localStorage.setItem("scoresArray", JSON.stringify(scoresArray));
 }
 
-// function disableButton(submitScore){
-//   document.getElementById(submitScore).disabled = true;
-//   alert("Button has been disabled.");
-// }
-
 submitScore.addEventListener("click", function (event) {
   event.preventDefault();
   var scoreText = nameInput.value.trim();
   var concatScore = scoreText.concat(separator, score);
   scoresArray.push(concatScore);
-  // nameInput.value = "";
-
-
 
   storeScores();
   renderScores();
-  // myFunction();
-  // disableButton(submitScore);
+ 
 });
 initScores()
 

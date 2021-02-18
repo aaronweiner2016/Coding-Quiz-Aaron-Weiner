@@ -57,6 +57,16 @@ body{
    border: 2px black solid;
 }
 
+#high-score:hover,
+#go-back:hover,
+#retake-quiz:hover,
+#start-btn:hover,
+.answers:hover,
+#next:hover{
+    opacity: .8;
+    transition: .25s;
+}
+
 #high-score-box{
     font-size: 30px;
 }
@@ -81,6 +91,7 @@ body{
     font-size: 30px;
     margin: 10px;
 }
+
 
 #start-btn{
     font-size: 90px;
