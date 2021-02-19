@@ -252,50 +252,50 @@ var questions = [
   }, {
     question: "What is a Undefined Variable?",
     answers: [
-      { text: "A True or False Statement", correct: true },
-      { text: "A Variable", correct: false },
-      { text: "A Number", correct: false },
-      { text: "A Function", correct: false }
+      { text: "A number", correct: false },
+      { text: "An HTML element", correct: false },
+      { text: "A CSS element", correct: false },
+      { text: "A variable that has no content", correct: true }
     ]
-  }//, {
-  //   question: "How do you grab an ID?",
-  //   answers: [
-  //     { text: "A True or False Statement", correct: true },
-  //     { text: "A Variable", correct: false },
-  //     { text: "A Number", correct: false },
-  //     { text: "A Function", correct: false }
-  //   ]
-  // }, {
-  //   question: "How do you grab an ID?",
-  //   answers: [
-  //     { text: "A True or False Statement", correct: true },
-  //     { text: "A Variable", correct: false },
-  //     { text: "A Number", correct: false },
-  //     { text: "A Function", correct: false }
-  //   ]
-  // }, {
-  //   question: "How do you grab an ID?",
-  //   answers: [
-  //     { text: "A True or False Statement", correct: true },
-  //     { text: "A Variable", correct: false },
-  //     { text: "A Number", correct: false },
-  //     { text: "A Function", correct: false }
-  //   ]
-  // }, {
-  //   question: "How do you grab an ID?",
-  //   answers: [
-  //     { text: "A True or False Statement", correct: true },
-  //     { text: "A Variable", correct: false },
-  //     { text: "A Number", correct: false },
-  //     { text: "A Function", correct: false }
-  //   ]
-  // }, {
-  //   question: "How do you grab an ID?",
-  //   answers: [
-  //     { text: "A True or False Statement", correct: true },
-  //     { text: "A Variable", correct: false },
-  //     { text: "A Number", correct: false },
-  //     { text: "A Function", correct: false }
-  //   ]
-  // }
+  }, {
+     question: "How do you grab an ID?",
+     answers: [
+       { text: ".setAttribute", correct: false },
+       { text: ".getElementById/.querySelector", correct: true },
+       { text: ".onClick", correct: false },
+       { text: ".setItem", correct: false }
+     ]
+   }, {
+     question: "Which one is an example of a function?",
+    answers: [
+      { text: "var function", correct: false },
+      { text: "function()", correct: true },
+      { text: ".function", correct: false },
+      { text: "#function", correct: false }
+    ]
+  }, {
+    question: "How do you attach a list item to an unordered list?",
+    answers: [
+      { text: ".appendChild", correct: true },
+      { text: ".setElement", correct: false },
+      { text: ".length", correct: false },
+      { text: ".concat", correct: false }
+    ]
+  }, {
+    question: "How do you make a button do something?",
+    answers: [
+      { text: "Make a function", correct: false },
+      { text: "Just by creating the button element", correct: false },
+      { text: "add the .setAttribute", correct: false },
+      { text: "Using onClick or addEventListener", correct: true }
+    ]
+  }, {
+    question: "Which one is an example of a for loop?",
+    answers: [
+      { text: "for(i = 0; i < variable; i++)", correct: true },
+      { text: "if(variable = variable2)", correct: false },
+      { text: "li.appendChild(child)", correct: false },
+      { text: "localStore.setItem('item')", correct: false }
+    ]
+  }
 ]
