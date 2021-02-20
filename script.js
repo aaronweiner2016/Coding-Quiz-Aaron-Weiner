@@ -86,7 +86,11 @@ function setNextQuestion() {
   if (currentQuestionIndex < questions.length) {
     showQuestion(shuffledQuestions[currentQuestionIndex])
   } else {
-    timeEl.textContent = "Seconds Left: " + secondsLeft;
+    if (secondsLeft <= 0) {
+      timeEl.textContent = "Seconds Left: 0";
+    } else {
+      timeEl.textContent = "Seconds Left: " + secondsLeft;
+    }
     clearInterval(timerInterval);
     gameOver.classList.remove("hide");
     setTimeout(highScoresAfter,2000)
@@ -161,6 +165,7 @@ function highScoreButton() {
   highScoresList.classList.remove("hide");
   gameOver.classList.add("hide");
   clearInterval(timerInterval);
+  backCorrect.setAttribute("style", "background-color: cornflowerblue;")
 }
 
 
@@ -174,7 +179,12 @@ function viewHighScores() {
   ScoreZero.classList.remove("hide");
   highScoresList.classList.remove("hide");
   goBackBtn.classList.remove("hide");
-  score = secondsLeft;
+  if (score <= 0) {
+    score = 0;
+  }else {
+    score = secondsLeft;
+
+  }
   localStorage.setItem("score", score);
 }
 
