@@ -1,4 +1,3 @@
-
 var timeEl = document.querySelector("#timer");
 var start = document.querySelector("#start-btn");
 var next = document.querySelector("#next");
@@ -8,7 +7,7 @@ var questionElement = document.getElementById("questions");
 var answersButtonElement = document.querySelector(".answers");
 var retakeQuizBtn = document.querySelector("#retake-quiz");
 var goBackBtn = document.querySelector("#go-back");
-var secondsLeft = 100;
+var secondsLeft = 80;
 var timerInterval;
 var backCorrect = document.querySelector("body");
 var scoreTime = document.querySelector("#score-time");
