@@ -7,7 +7,7 @@ var questionElement = document.getElementById("questions");
 var answersButtonElement = document.querySelector(".answers");
 var retakeQuizBtn = document.querySelector("#retake-quiz");
 var goBackBtn = document.querySelector("#go-back");
-var secondsLeft = 80;
+var secondsLeft = 20;
 var timerInterval;
 var backCorrect = document.querySelector("body");
 var scoreTime = document.querySelector("#score-time");
@@ -19,7 +19,7 @@ var incorrectAlert = document.querySelector("#wrong");
 var correctAlert = document.querySelector("#right");
 var gameOver = document.querySelector("#game-over");
 var ScoreZero = document.querySelector("#score-zero")
-
+console.log(score);
 // create eventlistener for button, hide green in this
 
 var answer1 = document.querySelector("#one");
@@ -34,17 +34,17 @@ var arrOfAnswers = [answer1, answer2, answer3, answer4];
 function setTime() {      //starts the time interval
   timerInterval = setInterval(function () {
     secondsLeft--;   // - one second
-    timeEl.textContent = "Seconds Left: " + secondsLeft;
-
     if (secondsLeft <= 0) {
+      timeEl.textContent = "Seconds Left: 0" 
       clearInterval(timerInterval);
       highScoresList.classList.remove("hide");
       retakeQuizBtn.classList.remove("hide");
       qContainer.classList.add("hide");
       highScoreLeftCrn.classList.add("hide");
-      timeEl.classList.add("hide");
       viewHighScores()
-    };
+    }else{
+      timeEl.textContent = "Seconds Left: " + secondsLeft
+    }
   }, 1000);
 }
 
@@ -179,7 +179,7 @@ function viewHighScores() {
   ScoreZero.classList.remove("hide");
   highScoresList.classList.remove("hide");
   goBackBtn.classList.remove("hide");
-  if (score <= 0) {
+  if (secondsLeft <= 0) {
     score = 0;
   }else {
     score = secondsLeft;
