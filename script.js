@@ -7,7 +7,7 @@ var questionElement = document.getElementById("questions");
 var answersButtonElement = document.querySelector(".answers");
 var retakeQuizBtn = document.querySelector("#retake-quiz");
 var goBackBtn = document.querySelector("#go-back");
-var secondsLeft = 20;
+var secondsLeft = 80;
 var timerInterval;
 var backCorrect = document.querySelector("body");
 var scoreTime = document.querySelector("#score-time");
